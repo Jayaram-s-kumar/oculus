@@ -25,16 +25,25 @@ body {
 
 .bgimage {
     position: absolute;
-    top: 14%;
-    left: 3%;
-    width: 49%;
+    top: 8%;
+   transform: rotate(-12deg);
+    width: 35%;
     height: 300px;
     object-fit: cover;
     opacity: 0.16;
+    z-index: 99;
+    transition: 0.5s;
 
-    @media (max-width:1100px) {
+    @media (max-width:900px) {
         display: none;
     }
+}
+
+.bgimage:hover{
+    width: 37%;
+    /* transform: rotate(0deg); */
+    opacity: 0.7;
+
 }
 
 .navbar {
@@ -309,6 +318,7 @@ body {
     background-color: black;
     position: relative;
     margin-top: 100px;
+    transition: 0.3s;
 
     @media (max-width:900px) {
         margin-top: 75px;
@@ -316,11 +326,20 @@ body {
     }
 }
 
+.vrbag:hover{
+    scale: 0.95;
+}
+
 .vrbag img {
     width: 75%;
     position: absolute;
     top: -47%;
     left: 13%;
+    transition: 0.3s;
+}
+
+.vrbag img:hover{
+    scale: 1.2;
 }
 
 
@@ -344,10 +363,15 @@ body {
     height: 100px;
     background-color: yellow;
     position: relative;
+    transition: 0.3s;
 
     @media (max-width:900px) {
         height: 75px;
     }
+}
+
+.fitpack:hover{
+    scale: 0.8;
 }
 
 .fitpack img {
@@ -355,11 +379,16 @@ body {
     position: absolute;
     top: -28%;
     left: 8%;
+    transition: 0.3s;
 
     @media (max-width:700px) {
         width: 100%;
     }
 
+}
+
+.fitpack img:hover{
+    transform: scale(1.2);
 }
 
 .fitpack p {
@@ -379,6 +408,7 @@ body {
     background-color: skyblue;
     position: relative;
     margin-top: 100px;
+    transition: 0.3s;
 
     @media (max-width:900px) {
         height: 75px;
@@ -387,17 +417,26 @@ body {
     }
 }
 
+.linkcable:hover{
+    scale: 0.8;
+}
+
 .linkcable img {
     width: 55%;
     position: absolute;
     top: -35%;
     left: 19%;
+    transition: 0.3s;
 
     @media (max-width:700px) {
         width: 90%;
         height: 80%;
     }
 
+}
+
+.linkcable img:hover{
+    transform: scale(1.35);
 }
 
 .linkcable p {
