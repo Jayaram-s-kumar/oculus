@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oculus a product by IGORAZA</title>
+    <!-- @dev taiwlindcss cdn added -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-</head>
-
-<body>
+  <body>
     <div class="bluecontainer">
-        <img src="./heroimage.png" alt="" class="bgimage">
-
-        <div class="navbar">
-            <div class="logo">
-                <img src="./zero.png" alt="">
-                <p>oculus</p>
-            </div>
-            <div class="options">
-                <p>PRODUCTS</p>
-                <p>APPS & GAMES</p>
-                <p>SUPPORT</p>
-            </div>
-            <div class="usericons">
-                <div class="roundedge">
-                    <img src="./user.png" alt="">
-                </div>
-                <div class="roundedge">
-                    <img src="./shopping-bag.png" alt="">
-                </div>
-            </div>
+      <img src="./heroimage.png" alt="" class="bgimage" />
+      <div class="navbar flex justify-between">
+        <div class="logo flex items-center">
+          <img src="./zero.png" alt="" />
+          <p>oculus</p>
         </div>
+        <div class="options text-sm">
+          <p>PRODUCTS</p>
+          <p>APPS & GAMES</p>
+          <p>SUPPORT</p>
+        </div>
+        <div class="usericons lg:flex hidden">
+          <div class="roundedge">
+            <img src="./user.png" alt="" />
+          </div>
+          <div class="roundedge">
+            <img src="./shopping-bag.png" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="herosection">
+
+    <div class="herosection h-screen">
         <div class="heroleft">
             <p class="herotitle"> <b>Unplug </b> & Play <br> For Real</p>
             <div class="features">
@@ -51,13 +54,13 @@
                     <p>Defect and malfunction coverage</p>
                 </div>
             </div>
-            <div class="learnmore">
-                <button>
-                    <p>LEARN MORE</p>
+            <div >
+                <button class="flex  text-center items-center w-60  px-3 py-2 p-4 bg-blue-700 text-white hover:bg-blue-500 rounded-lg transition duration-300">
+                    <p class="ml-12 ">LEARN MORE</p>
                 </button>
             </div>
         </div>
-        <div class="heroright">
+        <div class="heroright ">
             <div class="herorighttop">
                 <img src="./whitevr.png" alt="">
             </div>
@@ -66,7 +69,7 @@
                     <img src="./vrbag.png" alt="">
                     <p>CARRYING <br> CASE</p>
                 </div>
-                <div class="fitpack">
+                <div class="fitpack ">
                     <img src="./fitpack.png" alt="">
                     <p>FIT <br> PACK</p>
                 </div>
@@ -78,107 +81,126 @@
         </div>
     </div>
 
-    <div class="playforreal">
-        <div class="titlesection">
-
-            <p class="realtitle">PLAY FOR REAL</p>
-            <P>Don't just push buttons. Push yourself. With the
-                most immersive all-in-one Oculus VR system yet.
-            </P>
-        </div>
-        <div class="playforrealcards">
-            <div class="card">
-                <img src="./game1.jpg" alt="">
-                <div class="description">
-                    <p><b>Star Wars Tales From  The...</b></p>
-                    <p>Explore thousands of ui design elements to make your design workflow 
-                        faster and easier.
-                    </p>
-                </div>
+    <div class="playforreal  mt-[570px]">
+      <div class="titlesection">
+        <p class="realtitle">PLAY FOR REAL</p>
+        <p>
+          Don't just push buttons. Push yourself. With the most immersive
+          all-in-one Oculus VR system yet.
+        </p>
+      </div>
+      <div class="playforrealcards grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="./game1.jpg" alt="" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <div
+              class="description bg-white w-80 absolute bottom-(-65px) p-3 h-44 shadow-md rounded-md"
+            >
+              <p class="text-xl font-semibold">Star Wars Tails From The...</p>
+              <p class="text-gray-600 text-sm leading-5">
+                Explore thousands of UI design elements to make your design
+                workflow faster and easier.
+              </p>
             </div>
-
-            <div class="card">
-                <img src="./game2.jpg" alt="">
-                <div class="description">
-                    <p> <b>The Climb 2</b></p>
-                    <p>Explore thousands of ui design elements to make your design workflow 
-                        faster and easier.
-                    </p>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="./game2.jpg" alt="" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <div
+              class="description bg-white w-80 absolute bottom-(-65px) p-3 h-44 shadow-md rounded-md"
+            >
+              <p class="text-xl font-semibold">The Climb</p>
+              <p class="text-gray-600 text-sm leading-5">
+                Explore thousands of UI design elements to make your design
+                workflow faster and easier.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-    <div class="getitnow">
-        <div class="red">
-            <img src="./61tE7IcuLmL._SX522_-removebg-preview.png" alt="">
+    <div class="getitnow ">
+      <div class="red shadow-xl rounded-lg">
+        <img src="./61tE7IcuLmL._SX522_-removebg-preview.png" alt="" />
+      </div>
+      <div class="blue p-3 shadow-xl rounded-lg">
+        <h3>Get it Now</h3>
+        <div class="gigabytes">
+          <div class="sixtyfourgb">
+            <p>64 GB</p>
+          </div>
+          <p>256 GB</p>
         </div>
-        <div class="blue">
-            <h3>Get it Now</h3>
-            <div class="gigabytes">
-                <div class="sixtyfourgb">
-                    <p>64 GB</p>
-                </div>
-                <p>256 GB</p>
-            </div>
-            <div class="quest2">
-                <p>Quest 2 Elite Strap</p>
-                <p>Up your game with enhanced comfort. <br>
-                the fit wheel can be ...</p>
-            </div>
-            <div class="quest2withbattery">
-                <p>Quest 2 Elite Strap with battery
-                    pack and carrying case
-                </p>
-            </div>
-
-            <div class="learnmore">
-                <button>
-                    <p>BUY FOR $299</p>
-                </button>
-            </div>
+        <div class="quest2">
+          <p>Quest 2 Elite Strap</p>
+          <p>
+            Up your game with enhanced comfort. <br />
+            the fit wheel can be ...
+          </p>
         </div>
+        <div class="quest2withbattery">
+          <p>Quest 2 Elite Strap with battery pack and carrying case</p>
+        </div>
+
+        <div class="px-4 py-2 bg-blue-700 text-white hover:bg-blue-500 rounded-lg transition duration-300">
+          <button>
+            <p>BUY FOR $299</p>
+          </button>
+        </div>
+      </div>
     </div>
 
-
-    <div class="newsletter">
-        <div class="newsform">
-            <p>NEWSLETTER</p>
-            <h3>Subscribe Our <br> Newsletter</h3>
-            <input type="text" placeholder="Enter Your Email Address Here..."><br><br>
-        </div>
-        <div class="chatcontainer">
-            <img src="./chat.png" alt="">
-        </div>
+    <div class="newsletter rounded-lg shadow-xl p-8">
+      <div class="newsform">
+        <p>NEWSLETTER</p>
+        <h3>
+          Subscribe Our <br />
+          Newsletter
+        </h3>
+        <input
+          type="text"
+          class="border-none p-3 rounded-lg"
+          placeholder="Enter Your Email Address Here..."
+        /><br /><br />
+      </div>
+      <div class="chatcontainer">
+        <img src="./chat.png" alt="" />
+      </div>
     </div>
 
     <div class="footer">
-        <div class="footeroptions">
-            <p>Navigation</p>
-            <p>Products</p>
-            <p>Apps & Games</p>
-            <p>Support</p>
-        </div>
+      <div class="footeroptions">
+        <p>Navigation</p>
+        <p>Products</p>
+        <p>Apps & Games</p>
+        <p>Support</p>
+      </div>
 
-        <div class="footeroptions">
-            <p>Resources</p>
-            <p>Blog</p>
-            <p>Product Updates</p>
-        </div>
+      <div class="footeroptions">
+        <p>Resources</p>
+        <p>Blog</p>
+        <p>Product Updates</p>
+      </div>
 
-        <div class="footeroptions">
-            <p>Stay up to date</p>
-            <p>Stay informed on How you <br>
-            can make a difference</p>
+      <div class="footeroptions">
+        <p>Stay up to date</p>
+        <p>
+          Stay informed on How you <br />
+          can make a difference
+        </p>
 
-            <input type="text" placeholder="Enter Your Email Address Here..."><br><br>
-
-          
-        </div>
+        <input
+          type="text"
+          class="border-none p-3 rounded-lg w-[200px]"
+          placeholder="Enter Your Email Address Here..."
+        /><br /><br />
+      </div>
     </div>
-
-   
-</body>
-
+    <div class="text-center text-gray-600  text-sm">
+        A product by IGORAZA
+    </div>
+  </body>
 </html>
