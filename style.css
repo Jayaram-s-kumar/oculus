@@ -794,14 +794,14 @@ body {
     font-weight: 500;
 }
 
-.newsform input{
+/* .newsform input{
     width: 200px;
     height: 30px;
-    padding: 5px;
+    padding: 8px;
     outline: none;
     border: none;
 
-}
+} */
 
 .newsform input::placeholder{
     color: gray;
@@ -853,7 +853,7 @@ body {
     }
 }
 
-.footeroptions input{
+/* .footeroptions input{
     width: 200px;
     height: 30px;
     padding: 5px;
@@ -861,7 +861,7 @@ body {
     border: none;
     margin-top: 30px;
     background-color: rgb(255, 255, 255);
-}
+} */
 
 .footeroptions p:first-child{
     font-size: 13px;
